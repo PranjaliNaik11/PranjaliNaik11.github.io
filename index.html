@@ -1,93 +1,285 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+  <title>Portfolio Website-Pranjali</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- linking css file -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- bootstrap CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/97142b1efc.js" crossorigin="anonymous"></script>
 </head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Pranjali Naik - Data Analyst</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">About Me</a></li>
-                    <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <section id="about">
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark navbarScroll">
         <div class="container">
-            <h2>About Me</h2>
-            <p>Welcome to my professional portfolio! </p>
-            <p>I am a dedicated and results-driven Data Analyst with over 4.5 years of hands-on experience in the field, backed by a robust academic background. 
-            I hold a Master's degree in Data Analytics and a Bachelor's degree in Computer Engineering, equipping me with the expertise to transform complex datasets into meaningful insights. 
-            My career journey has been enriched by my tenure at Washington University in St. Louis, where I have seamlessly integrated academic knowledge with practical application. 
+            <a class="navbar-brand" href="#">Pranjali</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Connect</a>
+                    </li>
+                </ul>
+                
+            </div>
+        </div>
+    </nav>
+    <!-- main banner -->
+    <section class="bgimage" id="home">
+        <div class="container-fluid">
+            <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 hero-text">
+                <h2 class="hero_title">Hi, it's me Pranjali</h2>
+                <p class="hero_desc">I am a Data Analyst</p>
+            </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about section-->
+    <section id="about">
+        <div class="container mt-4 pt-4">
+            <h1 class="text-center">About Me</h1>
+            <div class="row mt-4">
+                <div class="col-lg-4">
+                    <img src="images/about.png" class= "imageAboutPage" alt="">
+                </div>
+
+                <div class="col-lg-8">
+		 <div class="row mt-3">
+                        <div class="col-md-6">
+                            <ul>
+                                <li>Name: Pranjali Naik</li>
+                                <li>Age: 28</li>
+                                <li>Occupation: Data Analyst</li>
+
+                            </ul>
+                        </div>
+                        
+                    </div>
+                    <p> I am a dedicated and results-driven Data Analyst with over 4.5 years of hands-on experience in the field, backed by a robust academic background. 
+            I hold a Master's degree in Data Analytics and a Bachelor's degree in Computer Engineering, equipping me with the expertise to transform complex datasets into meaningful insights.                 </p>
+		   <p>My career journey has been enriched by my tenure at Washington University in St. Louis, where I have seamlessly integrated academic knowledge with practical application. 
             I specialize in working with financial datasets, developing ad-hoc reports, projection models, and dynamic dashboards using advanced BI tools like Tableau and Power BI. 
             My technical proficiency spans across programming languages such as Python, R, HTML, CSS, PHP, and XML. Additionally, I am certified in Artificial Intelligence, reflecting my commitment to staying abreast of industry trends. 
-            I excel in utilizing Business Intelligence tools to craft visually compelling and insightful reports, and my skill set includes advanced capabilities in Microsoft Excel and SQL for precise data extraction, manipulation, and analysis. 
+			</p>
+		<p> I excel in utilizing Business Intelligence tools to craft visually compelling and insightful reports, and my skill set includes advanced capabilities in Microsoft Excel and SQL for precise data extraction, manipulation, and analysis. 
             My approach to data analysis is centered on translating raw data into strategic insights that align with business objectives, driving organizational success. 
             I am passionate about connecting with fellow professionals, organizations, and enthusiasts to discuss data analytics strategies, business intelligence, and the latest technology trends. 
-            Thank you for visiting my profile, and I look forward to exploring opportunities to collaborate and engage in meaningful conversations.</p>
-        </div>
+            Thank you for visiting my profile, and I look forward to exploring opportunities to collaborate and engage in meaningful conversations.
+                    </p>
+                   
+                    <div class="row mt-3">
+                        
+                    </div>
+                </div>
+            </div>
     </section>
 
-    <section id="projects">
+    <!-- services section-->
+    <section id="services">
         <div class="container">
-            <h2>Projects</h2>
-            <div class="project-card">
-                <h3>Project 1: Sales Analysis Dashboard</h3>
-                <p>Interactive dashboard to visualize sales data and trends.</p>
-                <a href="https://github.com/username/project1" class="button">View Project</a>
+            <h1 class="text-center">Skills</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+			    <i class="fa-brands fa-python"></i>
+                            <h4 class="card-title mt-3">Python Programming</h4>
+                            <p class="card-text mt-3">I've utilized Python's robust libraries like Pandas, NumPy, and Scikit-learn to extract insights from complex datasets. Python's flexibility and scalability have empowered me to tackle diverse analytical challenges, from exploratory data analysis to predictive modeling, enhancing decision-making processes across various industries.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                           <i class="fa-solid fa-registered"></i>
+                            <h4 class="card-title mt-3">R Programming</h4>
+                            <p class="card-text mt-3">I specialize in leveraging R programming for comprehensive data analysis.
+				My expertise includes extracting insights, developing models, and visualizing data to drive informed decision-making.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class="fa-solid fa-database"></i>
+                            <h4 class="card-title mt-3">SQL</h4>
+                            <p class="card-text mt-3">I excel in utilizing SQL fro efficient data manipulation, querying, and database management. My proficiency in SQL enables me to extract valuable insights and generate actionable reports to support strategic business objectives.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
             </div>
-            <div class="project-card">
-                <h3>Project 2: Customer Segmentation</h3>
-                <p>Data analysis and segmentation of customers based on purchasing behavior.</p>
-                <a href="https://github.com/username/project2" class="button">View Project</a>
-            </div>
-            <div class="project-card">
-                <h3>Project 3: Financial Forecasting Model</h3>
-                <p>Model to predict future financial performance based on historical data.</p>
-                <a href="https://github.com/username/project3" class="button">View Project</a>
+
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class="fa-solid fa-chart-line"></i>
+                            <h4 class="card-title mt-3">Tableau</h4>
+                            <p class="card-text mt-3">I've leveraged Tableau to craft interactive and dynamic dashboards, empowering stakeholders to effortlessly engage with data. Through intuitive design and thoughtful implementation, I've enabled seamless exploration and understanding of complex datasets.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class="fa-solid fa-chart-simple"></i>
+                            <h4 class="card-title mt-3">Power BI</h4>
+                            <p class="card-text mt-3">Incorporating Power BI, I've adeptly crafted intricate reports by harnessing its robust data modelling capabilities, seamlessly merging datasets and establishing relationships. 
+                            </p>
+                        </div>
+                    </div>  
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card servicesText">
+                        <div class="card-body">
+                            <i class="fa-solid fa-chart-pie"></i>
+                            <h4 class="card-title mt-3">IBM Cognos</h4>
+                            <p class="card-text mt-3">Harnessing IBM Cognos, I've expertly synthesized reports and intuitive dashboards from data warehouses enabling streamlined data analysis and informed decision making allowign stakeholders to extract valuable information effortlessly.
+                            </p>
+                        </div>
+                    </div>  
+                </div>
             </div>
         </div>
     </section>
 
-    <section id="skills">
-        <div class="container">
-            <h2>Skills</h2>
-            <ul class="skills-list">
-                <li>Data Analysis</li>
-                <li>Data Visualization</li>
-                <li>Statistical Analysis</li>
-                <li>SQL</li>
-                <li>Python</li>
-                <li>R</li>
-                <li>Power BI</li>
-                <li>Tableau</li>
-            </ul>
-        </div>
-    </section>
+    <!-- portfolio section-->
+    <section id="portfolio">
+        <div class="container mt-3">
+            <h1 class="text-center">Projects</h1>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card">
+                        <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Predict Credit Card Approval</h4>
+                            <p class="card-text"></p>
+                            <div class="text-center">
+                                <a href="https://github.com/PranjaliNaik11/Prediction_Credit_card_approval" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Fake News Detection</h4>
+                            <p class="card-text"></p>
+                            <div class="text-center">
+                                <a href="https://github.com/PranjaliNaik11/Detecting_Fake_and_Real_News_Passive_Aggresive_Classifier" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/portfolioImage3.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Image Recognition</h4>
+                            <p class="card-text"></p>
+                            <div class="text-center">
+                                <a href="https://github.com/PranjaliNaik11/Neural_Networks_Image_Recognition_Sequential_CNN" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Alphabet Classification</h4>
+                            <p class="card-text"></p>
+                            <div class="text-center">
+                                <a href="https://github.com/PranjaliNaik11/Alphabet_Classification_ksvm_R" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/portfolioImage1.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Zomato Restaurant Analysis</h4>
+                            <p class="card-text"></p>
+                            <div class="text-center">
+                                <a href="https://github.com/PranjaliNaik11/Zomato-Restaurant-Analysis" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 mt-4">
+                    <div class="card portfolioContent">
+                        <img class="card-img-top" src="images/portfolioImage4.jpg" alt="Card image" style="width:100%">
+                        <div class="card-body">
+                            <h4 class="card-title">Breast Cancer Classification</h4>
+                            <p class="card-text"></p>
+                            <div class="text-center">
+                                <a href="https://github.com/PranjaliNaik11/Breast_Cancer_Classfication_using_RandomForest" class="btn btn-success">Link</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+<div>                        
+
+
+
+</div>
+    <!-- contact section-->
     <section id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:john.doe@example.com">john.doe@example.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/johndoe">linkedin.com/in/johndoe</a></p>
+        <div class="container mt-3 contactContent">
+            <h1 class="text-center">Connect</h1>
+		<div class="container-fluid">
+            		<!-- social media icons -->
+            		<div class="social-icons mt-8">
+				<a href="https://linkedin.com/in/pranjali-naik" target="_blank"><i class="fab fa-brands fa-linkedin"></i></a>
+                		<a href="https://github.com/PranjaliNaik11" target="_blank"><i class="fab fa-brands fa-github"></i></a>
+				
+            		</div>
+        	</div>
         </div>
     </section>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2024 Pranjali Naik. All rights reserved.</p>
-        </div>
-    </footer>
+    <!-- load javascript after loading all html content -->
+    <script src="script/script.js"></script>
 
-    <script src="script.js"></script>
 </body>
+
 </html>

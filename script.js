@@ -1,14 +1,19 @@
-// Smooth scrolling for navigation links
-document.querySelectorAll('nav ul li a').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        
-        const targetId = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
+// add class navbarDark on navbar scroll
+const header = document.querySelector('.navbar');
+console.log(header)
+window.onscroll = function() {
+    const top = window.scrollY;
+    if(top >=100) {
+        header.classList.add('navbarDark');
+    }
+    else {
+        header.classList.remove('navbarDark');
+    }
+}
+// collapse navbar after click on small devices
+const navLinks = document.querySelectorAll('.nav-item')
+const menuToggle = document.getElementById('navbarSupportedContent')
 
-        window.scrollTo({
-            top: targetElement.offsetTop,
-            behavior: 'smooth'
-        });
-    });
-});
+navLinks.forEach((l) => {
+    l.addEventListener('click', () => { new bootstrap.Collapse(menuToggle).toggle() })
+})

@@ -1,121 +1,88 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
+/* display background color black on navbar scroll */
+.navbarScroll {
+    background-color: black;
 }
 
-body {
-    line-height: 1.6;
-    color: #333;
+/* hero background image */
+.bgimage {
+    height:100vh;
+    background: url('images/heroImage1.jpeg');
+    background-size:cover;
+    position:relative;
 }
-
-.container {
-    width: 80%;
-    margin: auto;
-    overflow: hidden;
-    padding: 2rem 0;
+/* text css above hero image*/
+.hero_title {
+    font-size: 4.5rem;
 }
-
-header {
-    background: #333;
-    color: #fff;
-    padding: 1rem 0;
+.hero_desc {
+    font-size: 2rem;
 }
-
-header h1 {
+.hero-text {
     text-align: center;
-    margin-bottom: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
+/* spacing on all sections */
+/* #about, #services, #portfolio, #contact {
+    margin-top: 4rem;
+    padding-top: 4rem;
+} */
+#contact {
+    padding-bottom: 4rem;
 }
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-    transition: color 0.3s;
-}
-
-nav ul li a:hover {
-    color: #ff6347;
-}
-
-section {
-    padding: 2rem 0;
-    margin: 2rem 0;
-}
-
-section h2 {
-    text-align: center;
-    margin-bottom: 1rem;
-}
-
-section p, section ul {
-    text-align: center;
-    margin: 0 auto 2rem auto;
-    max-width: 600px;
-}
-
-.skills-list {
-    list-style: none;
-    padding: 0;
-}
-
-.skills-list li {
-    display: inline-block;
-    background: #eee;
-    margin: 5px;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.project-card {
-    background: #f4f4f4;
-    border: 1px solid #ddd;
-    padding: 1rem;
-    margin: 1rem 0;
-    border-radius: 5px;
-    transition: box-shadow 0.3s;
-}
-
-.project-card h3 {
-    margin-top: 0;
-}
-
-.project-card p {
-    margin: 1rem 0;
-}
-
-.project-card .button {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    color: #fff;
-    background: #333;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
-
-.project-card .button:hover {
-    background: #ff6347;
-}
-
-footer {
-    background: #333;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    position: relative;
-    bottom: 0;
+/* about section image css */
+.imageAboutPage {
     width: 100%;
+}
+
+/* services section css */
+.servicesText.card {
+    height: 280px;
+    cursor: pointer;
+  }
+.servicesIcon {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.fa-brands {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+.fa-solid {
+    font-size: 36px;
+    text-align: center;
+    width: 100%;
+}
+
+.card-title {
+    text-align: center;
+}
+.card:hover .servicesIcon {
+    color: #008000;
+}
+.servicesText:hover {
+    border: 1px solid #008000;
+}
+
+/* social media icons styling */
+.social-icons {
+    font-size: 36px;
+    cursor: pointer;
+}
+.fa-github:hover, .fa-linkedin:hover {
+    color: #008000;
+}
+.fab {
+    color: #000000;
+}
+/* footer styling */
+#footer {
+    background-color: #808080;
+    text-align: center;
 }
